@@ -1,0 +1,43 @@
+export PYTHONDOCS=/usr/share/doc/python-3/html
+export MAKEFLAGS='-j 8'
+export LFSC='http://www.linuxfromscratch.org/blfs/view/stable-systemd/index.html'
+export LFSM='http://mirror.fileplanet.com/lfs/pub/blfs/8.2'
+export LFSPREV='https://pastebin.com/fQ8UmW2H'
+export XORG_PREFIX='/usr'
+export XORG_CONFIG='--prefix=/usr --sysconfdir=/etc --localstatedir=/var --disable-static'
+export VDPAU_DRIVER=va_gl
+export QT5PREFIX=/opt/qt5
+
+alias ct='./configure --prefix=/tools'
+alias ctmm='./configure --prefix=/tools && make && make install'
+alias cu='./configure --prefix=/usr'
+alias cudmm='./configure --prefix=/usr --disable-static && make && sudo make install'
+alias cumm='./configure --prefix=/usr && make && sudo make install'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+alias mb='mkdir -pv build && cd build'
+alias mh='make && make-html'
+alias mhmh='make && make html && sudo make install && sudo make install-html'
+alias mm='make && sudo make install'
+alias rf='rm -rf'
+alias taf='tar -xf'
+alias cx='./configure $XORG_CONFIG'
+alias pat='patch -Np1 -i'
+alias pmm='perl Makefile.PL && make && sudo make install'
+
+as_root()
+{
+  if   [ $EUID = 0 ];        then $*
+  elif [ -x /usr/bin/sudo ]; then sudo $*
+  else                            su -c \\"$*\\"
+  fi
+}
+
+export -f as_root
+
+
