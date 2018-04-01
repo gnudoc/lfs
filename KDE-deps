@@ -1,22 +1,37 @@
 # path to install all of BLFS KDE
 # from a base of a generous install of utilities and libraries
 # plus X and ffmpeg with most options
+# if a package is optional it will start with *
+# once a package's first level deps are resolved it will end with /
+# if a package is not going to be installed it will end with *
 
-extra-cmake-modules-5.43.0
+extra-cmake-modules-5.43.0/
 
 phonon-4.10.0/
    qt-5.10.1/
       cups-2.2.6/
          colord-1.4.1/
             *docbook-utils-0.6.14*
-            *sane-1.0.27*
+            *sane-1.0.27**
          xdg-utils-1.1.2/
          *avahi-0.7/
-            gtk-2
-               atk-2.26.1
-               pango-1.40.14
-               hicolor-icon-theme-0.17
+            gtk-2/
+               atk-2.26.1/
+               pango-1.40.14/
+                  cairo-1.14.12/
+                     *cogl-1.22.2*
+                     *ghostscript-9.22*
+                     *gtk-2*
+                     *gtk-3*
+                     *librsvg-2.42.2*
+                     *poppler-0.62.0*
+               hicolor-icon-theme-0.17/
+               *cups-2.2.6*
+               *docbook-utils-0.6.14*
             gtk-3
+               at-spi2-atk-2.26.1
+               libepoxy-1.4.3
+               adwaita-icon-theme-3.26.1
             libglade-2.6.4
             *pygtk-2.24.0
          *openjdk-9.0.4*
