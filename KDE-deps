@@ -20,27 +20,52 @@ phonon-4.10.0/
                pango-1.40.14/
                   cairo-1.14.12/
                      *cogl-1.22.2*
-                     *ghostscript-9.22*
+                     *ghostscript-9.22* (later)
                      *gtk-2*
                      *gtk-3*
                      *librsvg-2.42.2*
-                     *poppler-0.62.0*
+                     *poppler-0.62.0* (later)
                hicolor-icon-theme-0.17/
                *cups-2.2.6*
                *docbook-utils-0.6.14*
-            gtk-3
-               at-spi2-atk-2.26.1
-               libepoxy-1.4.3
-               adwaita-icon-theme-3.26.1
-            libglade-2.6.4
-            *pygtk-2.24.0
+            gtk-3/
+               at-spi2-atk-2.26.1/
+                  at-spi2-core-2.26.2/
+               libepoxy-1.4.3/
+               adwaita-icon-theme-3.26.1/
+                  *gtk-3 & librsvg-2.42.2*
+                  *inkscape-0.92.2*
+               *cups-2.2.6*
+               *docbook-utils-0.6.14*
+               *pyatspi2-2.26.0*
+               *rest-0.8.1/
+            libglade-2.6.4/
+            *pygtk-2.24.0*
          *openjdk-9.0.4*
          *php-7.2.2*
-      cups-filters-1.20.0
-      gst-plugins-base-1.12.4
-      *ibus-1.5.17
-      *mariadb-10.2.13
-      *postgresql-10.2
-      *pulseaudio-11.1
+      cups-filters-1.20.0/
+         ghostscript-9.22/
+         mupdf/
+         poppler-0.62.0/
+            *qt-5.10.1* (come back to this one)
+         *php-7.2.2*
+      gst-plugins-base-1.12.4/
+         gstreamer-1.12.4/
+         cdparanoia-iii-10.2/
+         *qt-5.10.1*
+      *ibus-1.5.17*
+      *mariadb-10.2.13*
+      *postgresql-10.2*
+      *pulseaudio-11.1*
       
 
+
+      *gst-plugins-good-1.12.4/
+         *libdv-1.0.0/
+         *pulseaudio-11.1*
+         *taglib-1.11.1/
+         *v4l-utils-1.14.2*
+      *gst-plugins-bad-1.12.4/
+         libdvdread-6.0.0/
+         libdvdnav-6.0.0/
+         soundtouch-2.0.0/
