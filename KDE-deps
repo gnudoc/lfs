@@ -1,2 +1,31 @@
-# to install all of BLFS KDE
+# path to install all of BLFS KDE
+# from a base of a generous install of utilities and libraries
+# plus X and ffmpeg with most options
+
+extra-cmake-modules-5.43.0
+
+phonon-4.10.0/
+   qt-5.10.1/
+      cups-2.2.6/
+         colord-1.4.1/
+            *docbook-utils-0.6.14*
+            *sane-1.0.27*
+         xdg-utils-1.1.2/
+         *avahi-0.7/
+            gtk-2
+               atk-2.26.1
+               pango-1.40.14
+               hicolor-icon-theme-0.17
+            gtk-3
+            libglade-2.6.4
+            *pygtk-2.24.0
+         *openjdk-9.0.4*
+         *php-7.2.2*
+      cups-filters-1.20.0
+      gst-plugins-base-1.12.4
+      *ibus-1.5.17
+      *mariadb-10.2.13
+      *postgresql-10.2
+      *pulseaudio-11.1
+      
 
