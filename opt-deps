@@ -399,5 +399,34 @@ vorbis-tools-1.4.0
 xdg-utils-1.1.2
 mupdf-1.12.0
 
+extra-cmake-modules-5.43.0
 
-
+colord-1.4.1 ,,,docbook-utils-0.6.14,sane-1.0.27
+cairo-1.14.12
+pango-1.40.14
+hicolor-icon-theme-0.17
+gtk+-2.24.32 ,,,docbook-utils-0.6.14
+adwaita-icon-theme-3.26.1 ,,,inkscape-0.92.2
+rest-0.8.1
+gtk+-3.22.28 ,,,docbook-utils-0.6.14
+pycairo-1.16.2
+pygobject-2.28.7
+pygtk-2.24.0
+libglade-2.6.4
+avahi-0.7
+cups-2.2.6 ,,,openjdk-9.0.4,php-7.2.2
+cogl-1.22.2
+ghostscript-9.22
+librsvg-2.24.2
+poppler-0.62.0
+cups-filters-1.20.0 ,,,php-7.2.2
+gconf-3.2.6
+pulseaudio-11.1
+qt-5.10.1 ,,,ibus-1.5.17,mariadb-10.2.13,postgresql-10.2
+phonon-4.10.0
+v4l-utils-1.14.2
+gst-plugins-good-1.12.4
+clutter-1.26
+gst-plugins-bad-1.12.4 ,,,opencv-3.4.0
+gst-plugins-ugly-1.12.4
+phonon-backend-gstreamer-4.9.0
