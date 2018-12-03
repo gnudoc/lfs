@@ -1,5 +1,5 @@
 blfs-systemd-units-20180105
-openssh-7.7p1
+openssh-7.7p1 ,,,linux-pam,X,krb5
 make-ca-0.8
 wget-1.19.5
 sudo-1.8.23 ,,,mta
