@@ -2,10 +2,10 @@ blfs-systemd-units-20180105
 openssh-7.7p1 ,,,linux-pam,X,krb5
 make-ca-0.8 ,,,openjdk,nss,p11-kit #runtime deps?
 wget-1.19.5 ,,,gnutls,gpgme,libidn2,pcre,,,,python-2,valgrind,http::daemon,io::socket::ssl
-http::daemon
-net::ssleay
-io::socket::ssl
-valgrind ,,,boost,llvm,,,bind,gdb,which
+http::daemon####################
+net::ssleay##################
+io::socket::ssl################
+valgrind ,,,boost,llvm,,,bind,gdb,which#####################
 sudo-1.8.23 ,,,linux-pam,krb5,openldap,mta
 lynx-2.8.9 ,,,zip,unzip,mta,sharutils
 screen-4.6.2 ,,,linux-pam
@@ -28,9 +28,12 @@ libcap-2.25
 shadow-4.6 
 pcre-8.42
 pcre2-10.31
-glib-2.56.1
+glib-2.56.1 ,,, ,,,dbus
+tcl-8.6.8#####################
+expect-5.45.4 ,,,tk######################
+dejagnu-1.6.1######################
 autoconf-2.13
-icu-62.1
+icu-62.1 ,,,llvm
 nspr-4.19
 zip-3.0
 which-2.21
