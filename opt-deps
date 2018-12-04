@@ -85,7 +85,7 @@ p11-kit-0.23.13 ,,,nss,gtk-doc,libxslt
 
 dosfstools-4.1
 lzo-2.10
-lvm2-2.02.177 ,,,reiserfsprogs-3.6.27
+lvm2-2.02.177 ,,,mdadm,xfsprogs #reiserfsprogs-3.6.27
 asciidoc-8.6.9
 libxml2-2.9.8
 sgml-common-0.6.3
@@ -102,16 +102,16 @@ popt-1.16
 gptfdisk-1.0.4
 pth-2.0.7
 npth-1.6
-parted-3.2
+parted-3.2 ,,,texlive
 smartmontools-6.6
 sqlite-3.24.0
 nss-3.38
 apr-1.6.3
-apr-util-1.6.1 ,,,mariadb-10.3.9,postgresql-10.5
-boost-1.68.0
+apr-util-1.6.1 ,,,mariadb,postgresql,unixodbc
 aspell-0.60.6.1
-enchant-2.2.3
-exempi-2.4.5
+boost-1.68.0
+enchant-2.2.3 ,,,dbus-glib
+exempi-2.4.5 
 fftw-3.3.7
 gsl-2.5
 json-c-0.13.1
