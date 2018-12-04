@@ -46,18 +46,40 @@ haveged-1.9.2
 iptables-1.8.0
 libpwquality-1.4.0
 berkeley-db-5.3.28
-cyrus-sasl-2.1.26 ,,,mariadb-10.3.9,openjdk-10.0.2,postgresql-10.5
-openldap-2.4.46 ,,,mariadb-10.3.9,postgresql-10.5 # client-only install
+cyrus-sasl-2.1.26 ,,,krb5,mariadb,openjdk,openldap,postgresql,sqlite
+openldap-2.4.46 ,,,gnutls,pth,unixodbc,mariadb,postgresql
 keyutils-1.5.10
 libevent-2.1.8
-lwp::protocol::https-6.07 (along with all deps except the testsuite ones)
+
+encode::locale
+uri-1.74
+html::parser-3.72
+http::date
+io::html
+lwp::mediatypes
+try::tiny
+http::message
+html::form
+http::cookies
+http::negotiate
+net::http
+www::robotrules
+http::daemon-6.01
+file::listing
+test::requiresinternet
+test::fatal
+libwww-perl
+mozilla::ca
+lwp::protocol::https-6.07
+
 ntp-4.2.8p12
-krb-1.16.1
+rpcbind-0.2.4
+krb5-1.16.1
 
 nettle-3.4
 openssl-1.0.2p
-libtasn1-4.13
-p11-kit-0.23.13
+libtasn1-4.13 ,,,gtk-doc
+p11-kit-0.23.13 ,,,nss,gtk-doc,libxslt
 
 
 
