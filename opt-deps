@@ -173,12 +173,12 @@ libusb-compat-0.1.5
 libzeitgeist-0.3.18
 mtdev-1.1.5
 node-v9.11.2
-talloc-2.1.14
+talloc-2.1.14 ,,,gdb,git,xfsprogs
 wayland-1.15.0
 wayland-protocols-1.15
 xapian-core-1.4.7
-gmime-2.6.23 ,,,docbook-utils-0.6.14
-gmime-3.2.0 ,,,docbook-utils-0.6.14
+gmime-2.6.23 ,,,docbook-utils
+gmime-3.2.0 ,,,docbook-utils
 libesmtp-1.0.6
 
 
