@@ -143,20 +143,20 @@ volume_key-0.3.11
 
 
 libuv-1.22.0
-cmake-3.12.1
+cmake-3.12.1 ,,,qt,subversion
 clucene-2.3.3.4
-libsigc++-2.10.0 
-glibmm-2.56.0
+libsigc++-2.10.0
+glibmm-2.56.0 ,,, ,,,glib-networking
 yaml-0.1.7
-libblockdev-2.16
-libgudev-232
+libblockdev-2.16 ,,,gtk-doc
+libgudev-232 ,,,gtk-doc
 libusb-1.0.22
-libidn-1.35 ,,,emacs-26.1,openjdk-10.0.2
+libidn-1.35 ,,,emacs,gtk-doc,openjdk
 usbutils-009
-vala-0.40.8
+vala-0.40.8 ,,, ,,,dbus
 itstool-2.0.4
 lua-5.3.5
-highlight-3.44
+highlight-3.44 ,,,qt
 gtk-doc-1.27 ,,,fop-2.2
 libgusb-0.3.0
 libical-3.0.4
