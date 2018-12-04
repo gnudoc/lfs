@@ -37,15 +37,14 @@ icu-62.1 ,,,llvm
 nspr-4.19
 zip-3.0
 which-2.21
-gobject-introspection-1.56.1 ,,,gtk-doc
-systemd-239 ,,,qemu-3.0.0,zsh-5.5.1
+gobject-introspection-1.56.1 ,,,gtk-doc,,,cairo
+systemd-239 ,,,curl,git,gnutls,iptables,libgcrypt,libidn2,libseccomp,libxkbcommon,qemu,zsh
 unzip-6.0
 sharutils-4.15.2
-libtirpc-1.0.3
+libtirpc-1.0.3 ,,,krb5
 haveged-1.9.2
 iptables-1.8.0
 libpwquality-1.4.0
-tcl-8.6.8
 berkeley-db-5.3.28
 cyrus-sasl-2.1.26 ,,,mariadb-10.3.9,openjdk-10.0.2,postgresql-10.5
 openldap-2.4.46 ,,,mariadb-10.3.9,postgresql-10.5 # client-only install
