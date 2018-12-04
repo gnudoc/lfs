@@ -199,7 +199,7 @@ tree-1.7.0
 unixodbc-2.3.7
 xdg-user-dirs-0.17
 
-pm-utils-1.4.1 
+pm-utils-1.4.1
 acpid-2.0.30
 hdparm-9.56
 wireless_tools-29
@@ -208,20 +208,20 @@ libnsl-1.2.0
 nfs-utils-2.3.2
 rpcbind-0.2.4
 autofs-5.1.4
-cpio-2.12
-fcron-3.2.1 ,,,mta,docbook-utils-0.6.14
-gpm-1.20.7
+cpio-2.12 ,,,texlive
+fcron-3.2.1 ,,,mta,docbook-utils
+(gpm-1.20.7)
 lm_sensors-3.40
 logrotate-3.14.0
 libpng-1.6.35
 slang-2.3.2
-mc-4.8.21 ,,,samba-4.8.4
+mc-4.8.21 ,,,(gpm),samba,X
 p7zip-16.02
 pax-20161104
 pciutils-3.6.2
 raptor2-2.0.15
 rasqal-0.9.33
-redland-1.0.17 ,,,maria-db-10.3.9,postgresql-10.5
+redland-1.0.17 ,,,libiodbc,maria-db,postgresql
 sg3-utils-1.42
 sysstat-11.6.3
 unrar-5.6.5
