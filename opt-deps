@@ -287,11 +287,11 @@ lcms2-2.9
 libexif-0.6.21
 libmng-2.0.3
 LibRaw-0.19.0
-libwebp-1.0.0
+libwebp-1.0.0 ,,,freeglut
 newt-0.52.20
 ##openjpeg-1.5.2 -- no longer in blfs book
 openjpeg-2.3.0
-pixman-0.34.0
+pixman-0.34.0 ,,,gtk2
 potrace-1.15
 qpdf-8.2.1 ,,,fop-2.2
 
