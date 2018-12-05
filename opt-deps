@@ -8,6 +8,9 @@ io::socket::ssl################
 valgrind ,,,boost,llvm,,,bind,gdb,which#####################
 sudo-1.8.23 ,,,linux-pam,krb5,openldap,mta
 lynx-2.8.9 ,,,zip,unzip,mta,sharutils
+libatomic_ops-7.6.6
+gc-7.6.4
+w3m-0.5.3 ,,,(gpm),imlib2,gtk2,gdk-pixbuf,compface
 screen-4.6.2 ,,,linux-pam
 dhcpcd-7.0.7 ,,,llvm
 
@@ -120,7 +123,6 @@ libarchive-3.3.2
 libgpg-error-1.32
 libassuan-2.5.1 ,,,texlive
 libatasmart-0.19
-libatomic_ops-7.6.6 
 libbytesize-1.4 ,,,gtk-doc
 libcroco-0.6.12 ,,,gtk-doc
 libdaemon-0.14
@@ -229,7 +231,6 @@ unrar-5.6.5
 
 
 clisp-2.49
-gc-7.6.4
 error-0.17026 ##perl module
 git-2.18.0 ,,,subversion,tk
 guile-2.2.4 ,,,emacs,gdb (runtime?)
@@ -243,24 +244,24 @@ rustc-1.25.0 ,,,gdb
 scons-3.0.0 ,,,libxml2(python)
 swig-3.0.12
 yasm-1.3.0
+gdb-8.1.1
 
-cifs-utils-6.8 ,,,samba-4.8.4
+cifs-utils-6.8 ,,,samba
 ncftp-3.2.6
 rsync-3.1.3
 net-tools-cvs-20101030
 gsettings-desktop-schemas-3.28.0
 libnl-3.4.0
-libpcap-1.9.0
+libpcap-1.9.0 ,,,bluez
 ldns-1.7.0
 libndp-1.7
 glib-networking-2.56.1
-libsoup-2.62.3
+libsoup-2.62.3 ,,, ,,,apache,php,samba
 neon-0.30.2
 serf-1.3.9
 uhttpmock-0.5.1
-nmap-7.70 ,,,subversion-1.9.7
+nmap-7.70 ,,,pygtk,subversion
 traceroute-2.1.0
-w3m-0.5.3
 whois-5.2.20
 
 ##python modules
@@ -271,15 +272,16 @@ pyyaml-3.13
 babl-0.1.56
 exiv2-0.26
 freetype-2.9.1
-harfbuzz-1.8.8
-fontconfig-2.13.0 ,,,docbook-utils-0.6.14
+harfbuzz-1.8.8 ,,,cairo,graphite
+freetype-2.9.1
+fontconfig-2.13.0 ,,,docbook-utils
 fribidi-1.0.5
 giflib-5.1.4
-graphite2-1.3.12
+graphite2-1.3.12 ,,,texlive
 ijs-0.35
-libjpeg-turbo-2.0.0
+libjpeg-turbo-2.0.0 ,,,freeglut
 jasper-2.0.14
-libtiff-4.0.9
+libtiff-4.0.9 ,,,freeglut
 lcms-1.19
 lcms2-2.9 
 libexif-0.6.21
