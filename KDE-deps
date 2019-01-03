@@ -5,55 +5,65 @@
 # once a package's first level deps are resolved it will end with /
 # if a package is not going to be installed it will end with *
 
-##extra-cmake-modules-5.43.0/
+extra-cmake-modules-5.43.0/
 
-##phonon-4.10.0/
-##   qt-5.10.1/
-##    cups-2.2.6/
-##       colord-1.4.1/
-##          *docbook-utils-0.6.14*
-##          *sane-1.0.27**
-##       *avahi-0.7/
-##          gtk-2/
-##             pango-1.40.14/
-##                cairo-1.14.12/
-##                   *cogl-1.22.2/
-##                   *ghostscript-9.22/
-##                   *gtk-2/
-##                   *gtk-3/
-##                   *librsvg-2.42.2/
-##                   *poppler-0.62.0/
-##             hicolor-icon-theme-0.17/
-##             *cups-2.2.6/
-##             *docbook-utils-0.6.14*
-##          gtk-3/
-##             adwaita-icon-theme-3.26.1/
-##                *gtk-3 & librsvg-2.42.2/
-##                *inkscape-0.92.2*
-##             *cups-2.2.6/
-##             *docbook-utils-0.6.14*
-##             *pyatspi2-2.26.0/
-##             *rest-0.8.1/
-##          libglade-2.6.4/
-##             *pygtk-2.24.0/
-##                pygobject-2.28.7/
-##                   pycairo-1.16.2/
-##       *openjdk-9.0.4*
-##       *php-7.2.2*
-##    cups-filters-1.20.0/
-##         ghostscript-9.22/
-##         poppler-0.62.0/
-##            *qt-5.10.1/
-##         *php-7.2.2*
-##    gst-plugins-base-1.12.4/
-##         *qt-5.10.1*
-##    *ibus-1.5.17*
-##    *mariadb-10.2.13*
-##    *postgresql-10.2*
-##    *pulseaudio-11.1/
-##       *gconf-3.2.6/
+phonon-4.10.0/
+   qt-5.10.1/
+    cups-2.2.6/
+       colord-1.4.1/
+          *docbook-utils-0.6.14*
+          *sane-1.0.27**
+       *avahi-0.7/
+          gtk-2/
+             pango-1.40.14/
+                cairo-1.14.12/
+                   *cogl-1.22.2/
+                   *ghostscript-9.22/
+                   *gtk-2/
+                   *gtk-3/
+                   *librsvg-2.42.2/
+                   *poppler-0.62.0/
+             hicolor-icon-theme-0.17/
+             *cups-2.2.6/
+             *docbook-utils-0.6.14*
+          gtk-3/
+             adwaita-icon-theme-3.26.1/
+                *gtk-3 & librsvg-2.42.2/
+                *inkscape-0.92.2*
+             *cups-2.2.6/
+             *docbook-utils-0.6.14*
+             *pyatspi2-2.26.0/
+             *rest-0.8.1/
+          libglade-2.6.4/
+             *pygtk-2.24.0/
+                pygobject-2.28.7/
+                   pycairo-1.16.2/
+       *openjdk-9.0.4*
+       *php-7.2.2*
+    cups-filters-1.20.0/
+         ghostscript-9.22/
+         poppler-0.62.0/
+            *qt-5.10.1/
+         *php-7.2.2*
+    gst-plugins-base-1.12.4/
+         *qt-5.10.1*
+    *ibus-1.5.17*
+    *mariadb-10.2.13*
+    *postgresql-10.2*
+    *pulseaudio-11.1/
+       *gconf-3.2.6/
+        
 
-         
+phonon-backend-vlc
+   vlc
+      liba52
+      libmad
+      *libdv
+      *libdvdcss
+      *libdvdread
+      *libdvdnav
+      *v4l-utils
+      *libmpeg2
       
 ##phonon-backend-gstreamer-4.9.0/
 ##   gst-plugins-good-1.12.4/
@@ -63,4 +73,3 @@
 ##         cogl-1.22.2/
 ##      *opencv*
 ##   gst-plugins-ugly-1.12.4/
-
