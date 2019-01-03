@@ -1,20 +1,22 @@
+##this should be used as a working file
+##if packages or deps are added here they should also be added to the .dist version
 blfs-systemd-units-20180105
-openssh-7.7p1 ,,,linux-pam,X,krb5
-make-ca-0.8 ,,,openjdk,nss,p11-kit #runtime deps?
-wget-1.19.5 ,,,gnutls,gpgme,libidn2,pcre,,,,python-2,valgrind,http::daemon,io::socket::ssl
+openssh-7.7p1
+make-ca-0.8 ,,,openjdk #runtime deps but run /usr/sbin/make-ca -f -g
+wget-1.19.5
 http::daemon
 net::ssleay
 io::socket::ssl
-valgrind ,,,boost,llvm,,,bind,gdb,which
-sudo-1.8.23 ,,,linux-pam,krb5,openldap,mta
-lynx-2.8.9 ,,,zip,unzip,mta,sharutils
+valgrind ,,, ,,,bind
+sudo-1.8.23 ,,,mta
+lynx-2.8.9 ,,,mta
 libatomic_ops-7.6.6
 gc-7.6.4
-w3m-0.5.3 ,,,(gpm),imlib2,gtk2,gdk-pixbuf,compface
-screen-4.6.2 ,,,linux-pam
-dhcpcd-7.0.7 ,,,llvm
+w3m-0.5.3 ,,,(gpm) #--with-imagelib='gtk2 gdk-pixbuf imlib2'
+screen-4.6.2
+dhcpcd-7.0.7
 
-python-2.7.15 ,,,bluez,sqlite,tk
+python-2.7.15
 pycrypto-2.6.1
 pyxdg-0.25
 funcsigs-1.0.2
@@ -26,36 +28,39 @@ six-1.11.0
 scour-0.37
 
 cracklib-2.9.6
-linux-pam-1.3.0 ,,,berkeley-db,libtirpc
+linux-pam-1.3.0
 libcap-2.25
 shadow-4.6 
 pcre-8.42
 pcre2-10.31
-glib-2.56.1 ,,, ,,,dbus
-tcl-8.6.8#####################
-expect-5.45.4 ,,,tk######################
-dejagnu-1.6.1 ,,,docbook-utils######################
+glib-2.56.1
+desktop-file-utils-0.23 ,,,emacs
+tcl-8.6.8
+expect-5.45.4
+dejagnu-1.6.1 ,,,docbook-utils
 autoconf-2.13
-icu-62.1 ,,,llvm
+icu-62.1
 nspr-4.19
 zip-3.0
 which-2.21
-gobject-introspection-1.56.1 ,,,gtk-doc,,,cairo
-systemd-239 ,,,curl,git,gnutls,iptables,libgcrypt,libidn2,libseccomp,libxkbcommon,qemu,zsh
+gobject-introspection-1.56.1
+systemd-239 ,,,qemu,zsh
 unzip-6.0
 sharutils-4.15.2
-libtirpc-1.0.3 ,,,krb5
+libtirpc-1.0.3
 haveged-1.9.2
 iptables-1.8.0
 libpwquality-1.4.0
 berkeley-db-5.3.28
-cyrus-sasl-2.1.26 ,,,krb5,mariadb,openjdk,openldap,postgresql,sqlite
-openldap-2.4.46 ,,,gnutls,pth,unixodbc,mariadb,postgresql
+cyrus-sasl-2.1.26 ,,,mariadb,openjdk,postgresql
+openldap-2.4.46 ,,,mariadb,postgresql
 keyutils-1.5.10
 libevent-2.1.8
 
 encode::locale
+test::needs
 uri-1.74
+html::tagset
 html::parser-3.72
 http::date
 io::html
@@ -81,21 +86,22 @@ krb5-1.16.1
 
 nettle-3.4
 openssl-1.0.2p
-libtasn1-4.13 ,,,gtk-doc
-p11-kit-0.23.13 ,,,nss,gtk-doc,libxslt
+libtasn1-4.13 ,,,gtk-doc***
+p11-kit-0.23.13 ,,,gtk-doc***
 
 
 
 dosfstools-4.1
 lzo-2.10
-lvm2-2.02.177 ,,,mdadm,xfsprogs #reiserfsprogs-3.6.27
+lvm2-2.02.177 #reiserfsprogs
 asciidoc-8.6.9
 libxml2-2.9.8
 sgml-common-0.6.3
 docbook-xml-4.5
 docbook-xsl-1.79.2
+libxml2-2.9.8 (python2)
 libxslt-1.1.32
-xmlto-0.0.28 ,,,fop-2.2
+xmlto-0.0.28 ,,,fop
 btrfs-progs-4.17.1
 fuse-3.2.5
 fuse-2.9.7
@@ -110,56 +116,57 @@ smartmontools-6.6
 sqlite-3.24.0
 nss-3.38
 apr-1.6.3
-apr-util-1.6.1 ,,,mariadb,postgresql,unixodbc
+apr-util-1.6.1 ,,,mariadb,postgresql
 aspell-0.60.6.1
 boost-1.68.0
-enchant-2.2.3 ,,,dbus-glib
-exempi-2.4.5 
-fftw-3.3.7
+enchant-2.2.3
+exempi-2.4.5
+fftw-3.3.8
 gsl-2.5
 json-c-0.13.1
-json-glib-1.4.2 ,,,gtk-doc
+json-glib-1.4.2
 libarchive-3.3.2
 libgpg-error-1.32
 libassuan-2.5.1 ,,,texlive
 libatasmart-0.19
-libbytesize-1.4 ,,,gtk-doc
-libcroco-0.6.12 ,,,gtk-doc
+libbytesize-1.4
+libcroco-0.6.12 ,,,gtk-doc***
 libdaemon-0.14
 libgcrypt-1.8.3 ,,,texlive
 cryptsetup-2.0.4
 libksba-1.3.5
-pinentry-1.1.0 ,,,emacs,gcr,gtk2,gtk3,libsecret,qt
-gnupg-2.2.9 ,,,curl,gnutls,imagemagick,libusb-compat,mta,texlive
+pinentry-1.1.0 ,,,emacs,gcr,libsecret
+gnupg-2.2.9 ,,,imagemagick,mta,texlive
 libunistring-0.9.10
-unbound ,,,swig
-gnutls-3.5.19 ,,,gtk-doc,guile,libidn,net-tools,texlive
-gpgme-1.11.1 ,,,gnupg,clisp,qt,swig
+unbound-1.7.3
+gnutls-3.5.19 ,,,gtk-doc***
+gpgme-1.11.1
 c-ares-1.14.0
-libidn2-2.0.5 ,,,git,gtk-doc
+libidn2-2.0.5 ,,,gtk-doc***
 nghttp2-1.32.0
 stunnel-5.48
-curl-7.61.0 ,,,libssh2,samba
+libssh2-1.8.0 
+curl-7.61.0 ,,,samba ##add --with-libssh2 (not in book)
 liboauth-1.0.3
 volume_key-0.3.11
 
 
 libuv-1.22.0
-cmake-3.12.1 ,,,qt,subversion
+cmake-3.12.1 ,,,subversion
 clucene-2.3.3.4
 libsigc++-2.10.0
-glibmm-2.56.0 ,,, ,,,glib-networking
+glibmm-2.56.0
 yaml-0.1.7
-libblockdev-2.16 ,,,gtk-doc
-libgudev-232 ,,,gtk-doc
+libblockdev-2.16 ,,,gtk-doc***
+libgudev-232 ,,,gtk-doc***
 libusb-1.0.22
-libidn-1.35 ,,,emacs,gtk-doc,openjdk
+libidn-1.35 ,,,emacs,gtk-doc***,openjdk
 usbutils-009
-vala-0.40.8 ,,, ,,,dbus
+vala-0.40.8
 itstool-2.0.4
 lua-5.3.5
-highlight-3.44 ,,,qt
-gtk-doc-1.27 ,,,fop-2.2
+highlight-3.44
+gtk-doc-1.28 ,,,fop
 libgusb-0.3.0
 libical-3.0.4
 liblinear-220
@@ -169,13 +176,12 @@ libpaper-1.1.24
 libqmi-1.20.2
 libseccomp-2.3.3
 libsigsegv-2.12
-libssh2-1.8.0 
 libstatgrab-0.91
 libusb-compat-0.1.5
 libzeitgeist-0.3.18
 mtdev-1.1.5
 node-v9.11.2
-talloc-2.1.14 ,,,gdb,git,xfsprogs
+talloc-2.1.14
 wayland-1.15.0
 wayland-protocols-1.15
 xapian-core-1.4.7
@@ -186,12 +192,10 @@ libesmtp-1.0.6
 
 bogofilter-1.2.4
 compface-1.5.2
-desktop-file-utils-0.23 ,,,emacs-26.1
 hd2u-1.0.4
 iso-codes-3.79
 lsof-4.91
 rarian-0.8.1
-
 
 
 shared-mime-info-1.10
@@ -201,6 +205,7 @@ tree-1.7.0
 unixodbc-2.3.7
 xdg-user-dirs-0.17
 
+
 pm-utils-1.4.1
 acpid-2.0.30
 hdparm-9.56
@@ -208,22 +213,21 @@ wireless_tools-29
 rpcsvc-proto-1.4
 libnsl-1.2.0
 nfs-utils-2.3.2
-rpcbind-0.2.4
 autofs-5.1.4
 cpio-2.12 ,,,texlive
 fcron-3.2.1 ,,,mta,docbook-utils
-(gpm-1.20.7)
+##gpm-1.20.7
 lm_sensors-3.40
 logrotate-3.14.0
 libpng-1.6.35
 slang-2.3.2
-mc-4.8.21 ,,,(gpm),samba,X
+mc-4.8.21 ,,,(gpm),samba
 p7zip-16.02
 pax-20161104
 pciutils-3.6.2
 raptor2-2.0.15
 rasqal-0.9.33
-redland-1.0.17 ,,,libiodbc,maria-db,postgresql
+redland-1.0.17 ,,,libiodbc(482),maria-db,postgresql
 sg3-utils-1.42
 sysstat-11.6.3
 unrar-5.6.5
@@ -232,16 +236,16 @@ unrar-5.6.5
 
 clisp-2.49
 error-0.17026 ##perl module
-git-2.18.0 ,,,subversion,tk
-guile-2.2.4 ,,,emacs,gdb (runtime?)
+git-2.18.0 ,,,subversion
+guile-2.2.4 ,,,emacs ##runtime
 librep-0.92.7
 llvm-6.0.1 ,,,texlive
 nasm-2.13.03
 npapi-sdk-0.27.2
-ruby-2.5.1 ,,,tk
+ruby-2.5.1
 gcc-8.2.0
-rustc-1.25.0 ,,,gdb
-scons-3.0.0 ,,,libxml2(python)
+rustc-1.25.0
+scons-3.0.0
 swig-3.0.12
 yasm-1.3.0
 gdb-8.1.1
@@ -252,7 +256,7 @@ rsync-3.1.3
 net-tools-cvs-20101030
 gsettings-desktop-schemas-3.28.0
 libnl-3.4.0
-libpcap-1.9.0 ,,,bluez
+libpcap-1.9.0
 ldns-1.7.0
 libndp-1.7
 glib-networking-2.56.1
@@ -260,7 +264,7 @@ libsoup-2.62.3 ,,, ,,,apache,php,samba
 neon-0.30.2
 serf-1.3.9
 uhttpmock-0.5.1
-nmap-7.70 ,,,pygtk,subversion
+nmap-7.70 ,,,subversion
 traceroute-2.1.0
 whois-5.2.20
 
@@ -272,28 +276,28 @@ pyyaml-3.13
 babl-0.1.56
 exiv2-0.26
 freetype-2.9.1
-harfbuzz-1.8.8 ,,,cairo,graphite
+harfbuzz-1.8.8
 freetype-2.9.1
 fontconfig-2.13.0 ,,,docbook-utils
 fribidi-1.0.5
 giflib-5.1.4
 graphite2-1.3.12 ,,,texlive
 ijs-0.35
-libjpeg-turbo-2.0.0 ,,,freeglut
+libjpeg-turbo-2.0.0
 jasper-2.0.14
-libtiff-4.0.9 ,,,freeglut
+libtiff-4.0.9
 lcms-1.19
 lcms2-2.9 
 libexif-0.6.21
 libmng-2.0.3
 LibRaw-0.19.0
-libwebp-1.0.0 ,,,freeglut
+libwebp-1.0.0
 newt-0.52.20
 ##openjpeg-1.5.2 -- no longer in blfs book
 openjpeg-2.3.0
-pixman-0.34.0 ,,,gtk2
+pixman-0.34.0
 potrace-1.15
-qpdf-8.2.1 ,,,fop-2.2
+qpdf-8.2.1 ,,,fop
 
 
 #######################
@@ -301,9 +305,9 @@ qpdf-8.2.1 ,,,fop-2.2
 #######################
 
 util-macros-1.19.2
-xorgproto-2018.4 ,,,fop-2.3
+xorgproto-2018.4 ,,,fop
 libXau-1.0.8
-libXdmcp-1.1.2
+libXdmcp-1.1.2 ,,,fop
 xcb-proto-1.13
 libxcb-1.13
 xorg libraries
@@ -349,7 +353,7 @@ libass-0.14.0
 fdk-aac-0.1.6
 alsa-lib-1.1.6
 libogg-1.3.3
-flac-1.3.2 ,,,docbook-utils-0.6.14
+flac-1.3.2 ,,,docbook-utils
 libvorbis-1.3.6
 libsndfile-1.0.28
 lame-3.100
@@ -367,11 +371,11 @@ libvpx-1.7.0
 opus-1.2.1
 x264-20180819-2245
 x265-2.8
-sdl2-2.0.8 ,,,ibus-1.5.19
+sdl2-2.0.8 ,,,ibus
 libcddb-1.3.2
 libcdio-2.0.0
 xvid-1.3.5
-ffmpeg-4.0.2 ,,,frei0r-plugins-1.6.1,opencv-3.4.2
+ffmpeg-4.0.2 ,,,frei0r-plugins,opencv
 
 libvdpau-va-gl-0.4.0
 twm-1.0.10
@@ -391,7 +395,6 @@ xfsprogs-4.17.0
 tk-8.6.8
 python-3.7.0
 wpa_supplicant-2.6
-dhcpcd-7.0.1
 
 
 atk-2.29.2
@@ -399,7 +402,6 @@ atkmm-2.24.2
 at-spi2-core-2.28.0
 at-spi2-atk-2.26.2
 imlib2-1.5.1
-libdrm-2.4.93
 libepoxy-1.5.2
 libxklavier-5.4
 startup-notification-0.12
@@ -412,42 +414,43 @@ gavl-1.4.0
 gstreamer-1.14.2
 cdparanoia-iii-10.2
 gst-plugins-base-1.14.2
-gst-libav-1.14.2
-id3lib-3.8.3
-liba52-0.7.4
-libao-1.2.0
-libdiscid-0.6.2
-libdvdcss-1.4.2
-libdvdread-6.0.0
-libdvdnav-6.0.0
-libdv-1.0.0
-libmad-0.15.1b
-libmpeg2-0.5.1
-libmusicbrainz-2.1.5
-libmusicbrainz-5.1.0
-libquicktime-1.2.4
+#gst-libav-1.14.2
+#id3lib-3.8.3
+liba52-0.7.4 (opt for vlc)
+#libao-1.2.0
+#libdiscid-0.6.2
+libdvdcss-1.4.2 (opt for vlc)
+libdvdread-6.0.0 (opt for vlc)
+libdvdnav-6.0.0 (opt for vlc)
+libdv-1.0.0 (opt for vlc)
+libmad-0.15.1b (opt for vlc)
+libmpeg2-0.5.1 (opt for vlc)
+#libmusicbrainz-2.1.5
+#libmusicbrainz-5.1.0
+#libquicktime-1.2.4
 ##opal-3.10.10 ,,,openjdk-9.0.4 --not in blfs 8.3
 sbc-1.3
-sound-theme-freedesktop-0.8
-soundtouch-2.0.0
+#sound-theme-freedesktop-0.8
+#soundtouch-2.0.0
 taglib-1.11.1
-mpg123-1.25.10
-vorbis-tools-1.4.0
+#mpg123-1.25.10
+#vorbis-tools-1.4.0
 
 xdg-utils-1.1.3
 mupdf-1.13.0
 
 extra-cmake-modules-5.49.0
 
-colord-1.4.3 ,,,docbook-utils-0.6.14,sane-1.0.27
+colord-1.4.3 ,,,docbook-utils,sane
 cairo-1.14.12
 pango-1.42.3
 hicolor-icon-theme-0.17
-gtk+-2.24.32 ,,,docbook-utils-0.6.14
+gtk+-2.24.32 ,,,docbook-utils
 gtk-engines-2.20.2
-adwaita-icon-theme-3.26.1 ,,,inkscape-0.92.2
+adwaita-icon-theme-3.26.1 ,,,inkscape
+lxappearance-0.6.3
 rest-0.8.1
-gtk+-3.22.28 ,,,docbook-utils-0.6.14
+gtk+-3.22.28 (req for librsvg) ,,,docbook-utils
 
 ##python modules
 dbus-python-1.2.8
@@ -456,42 +459,51 @@ pygobject-2.28.7
 pygobject-3.28.3
 libglade-2.6.4
 pygtk-2.24.0
-libxml2-2.9.8 ##python2 module
 pyatspi-2.26.0
 
 avahi-0.7
-cups-2.2.8 ,,,openjdk-10.0.2,php-7.2.9
+cups-2.2.8 ,,,openjdk,php
 cogl-1.22.2
 ghostscript-9.23
 librsvg-2.42.2
-poppler-0.67.0
-cups-filters-1.21.1 ,,,php-7.2.9
+poppler-0.67.0 ,,,gtk-doc
+cups-filters-1.21.1 ,,,php
 gconf-3.2.6
 pulseaudio-12.2
-qt-5.11.1 ,,,ibus-1.5.19,mariadb-10.3.9,postgresql-10.5
+qt-5.11.1 ,,,ibus,mariadb,postgresql
 phonon-4.10.1
 v4l-utils-1.14.2
-gst-plugins-good-1.14.2
-clutter-1.26.2
-gst-plugins-bad-1.14.2 ,,,opencv-3.4.2
-gst-plugins-ugly-1.14.2
-phonon-backend-gstreamer-4.9.0
+#gst-plugins-good-1.14.2
+#clutter-1.26.2
+#gst-plugins-bad-1.14.2 ,,,opencv-3.4.2
+#gst-plugins-ugly-1.14.2
+#phonon-backend-gstreamer-4.9.0
+vlc-3.0.3 ,,,opencv,samba,libnotify
+phonon-backend-vlc-0.10.1
 
 libiodbc-3.52.12
+upower-0.99.7
 NetworkManager-1.12.2
 
 polkit-qt-0.112.0
 libdbusmenu-qt-0.9.3+16.04.20160218
 
 qtwebengine-5.11.1
-falkon-3.0.1
+falkon-3.0.1 ,,,kf5,gnome-keyring
 
+lmdb-0.9.22
 kde frameworks 5
+kate-18.08.0
 ark-18.08.0
 konsole-18.08.0
+==================================================
 libkdcraw-18.08.0
 gwenview-18.08.0
 
 qca-2.1.3
 libcanberra-0.30
-plasma ,,,ibus-1.5.19
+oxygen-icons5-5.49.0
+dconf-0.28.0
+libnotify-0.7.7
+ibus-1.5.19
+plasma
