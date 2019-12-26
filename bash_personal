@@ -1,6 +1,6 @@
 #set +h
 #umask 022
-#LFS=/mnt/lfs
+export LFS=/mnt/lfs
 #LC_ALL=POSIX
 #LFS_TGT=$(uname -m)-lfs-linux-gnu
 #PATH=/tools/bin:/bin:/usr/bin
@@ -9,7 +9,7 @@
 export PYTHONDOCS=/usr/share/doc/python-3/html
 export MAKEFLAGS='-j 8'
 export LFSC='http://www.linuxfromscratch.org/blfs/view/stable-systemd/index.html'
-export LFSM='http://mirror.fileplanet.com/lfs/pub/blfs/8.3'
+export LFSM='http://mirror.fileplanet.com/lfs/pub/blfs/9.0'
 export LFSPREV='https://pastebin.com/fQ8UmW2H'
 export XORG_PREFIX='/usr'
 export XORG_CONFIG='--prefix=/usr --sysconfdir=/etc --localstatedir=/var --disable-static'
@@ -18,8 +18,8 @@ export QT5PREFIX=/opt/qt5
 export QT5DIR=/opt/qt5
 export KF5_PREFIX=/opt/kf5
 
-#alias ct='./configure --prefix=/tools'
-#alias ctmm='./configure --prefix=/tools && make && make install'
+alias ct='./configure --prefix=/tools'
+alias ctmm='./configure --prefix=/tools && make && make install'
 alias cu='./configure --prefix=/usr' 
 alias cudmm='./configure --prefix=/usr --disable-static && make && make install'
 alias cumm='./configure --prefix=/usr && make && make install'
@@ -38,7 +38,12 @@ alias rf='rm -rf'
 alias taf='tar -xf'
 alias cx='./configure $XORG_CONFIG'
 alias pat='patch -Np1 -i'
-alias pmm='perl Makefile.PL && make && make install'
+
+alias pmm='perl Makefile.PL && make && make test && make install'
+alias p2b='python2 setup.py build'
+alias p3b='python3 setup.py build'
+alias p2i='python2 setup.py install --optimize=1'
+alias p3i='python3 setup.py install --optimize=1'
 
 as_root()
 {
