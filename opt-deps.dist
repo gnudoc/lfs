@@ -1,59 +1,66 @@
 ##this should serve as the reference version
 ##if packages or deps are added to the working version they should be added here too
 time-1.9
-tree-1.7.0
+tree-1.8.0
 blfs-systemd-units-20180105
-openssh-7.7p1 ,,,linux-pam,X,krb5
-make-ca-0.8 ,,,openjdk,nss #runtime deps?
-libtasn1
-p11-kit
-wget-1.19.5 ,,,gnutls,gpgme,libidn2,pcre,,,python-2,valgrind,http::daemon,io::socket::ssl
-sudo-1.8.23 ,,,linux-pam,krb5,openldap,mta
+openssh-8.0p1 ,,,linux-pam,X,krb5
+make-ca-1.4 ,,,openjdk,nss,p11-kit #runtime deps?
+libtasn1-4.14
+p11-kit-0.23 ,,,libxslt
+wget-1.20.3 ,,,gnutls,libidn2,libpsl,pcre,,,,python-2,valgrind,http::daemon,io::socket::ssl
+sudo-1.8.27 ,,,linux-pam,krb5,openldap,mta
 lynx-2.8.9 ,,,zip,unzip,mta,sharutils
-libatomic_ops-7.6.6
+libatomic_ops-7.6.10
 screen-4.6.2 ,,,linux-pam
-dhcpcd-7.0.7 ,,,llvm
+dhcpcd-8.0.3 ,,,llvm
 
-python-2.7.15 ,,,bluez,sqlite,tk
+python-2.7.16 ,,,bluez,sqlite,tk
 pycrypto-2.6.1
+pygments-2.4.2
 pyxdg-0.25
-funcsigs-1.0.2
-beaker-1.10.0
-markupsafe-1.0
-jinja2-2.10
-mako-1.0.4
-six-1.11.0
+icu-64.2
+libxml2-2.9.9 #python3
+libxml2-2.9.9 #python2
+markupsafe-1.1.1
+jinja2-2.10.1
+mako-1.1.0
+six-1.12.0
 scour-0.37
 
-cracklib-2.9.6
-linux-pam-1.3.0 ,,,berkeley-db,libtirpc
-libcap-2.25
-shadow-4.6 
-pcre-8.42
-pcre2-10.31
-glib-2.56.1 ,,, ,,,dbus,bindfs
-desktop-file-utils-0.23 ,,,emacs
-tcl-8.6.8
-expect-5.45.4 ,,,tk
-dejagnu-1.6.1 ,,,docbook-utils
-autoconf-2.13
-icu-62.1 ,,,llvm
-nspr-4.19
-zip-3.0
-which-2.21
-gobject-introspection-1.56.1 ,,,gtk-doc,,,cairo
-systemd-239 ,,,curl,git,gnutls,iptables,libgcrypt,libidn2,libseccomp,libxkbcommon,qemu,zsh
+cracklib-2.9.7
+linux-pam-1.3.1 ,,,berkeley-db,libtirpc
+libcap-2.27
+shadow-4.7 
+pcre-8.43
+pcre2-10.33
+sgml-common-0.6.3
 unzip-6.0
+docbook-xml-4.5
+docbook-xsl-nons-1.79.2
+libxslt-1.1.33 ,,,libgcrypt
+lxml-4.4.1
+systemd-241 ,,,curl,cryptsetup,git,gnutls,iptables,libgcrypt,libidn2,libseccomp,libxkbcommon,qemu,zsh
+zip-3.0
+
+glib-2.60.6 ,,,gdb,,,dbus,bindfs
+desktop-file-utils-0.24 ,,,emacs
+shared-mime-info-1.12
+tcl-8.6.9
+expect-5.45.4 ,,,tk
+dejagnu-1.6.2 ,,,docbook-utils
+autoconf-2.13
+nspr-4.21
+which-2.21
+gobject-introspection-1.60.2 ,,,gtk-doc,,,cairo,gjs
 sharutils-4.15.2
-libtirpc-1.0.3 ,,,krb5
+libtirpc-1.1.4 ,,,krb5
 haveged-1.9.2
-iptables-1.8.0
+iptables-1.8.3
 libpwquality-1.4.0
 berkeley-db-5.3.28
-cyrus-sasl-2.1.26 ,,,krb5,mariadb,openjdk,openldap,postgresql,sqlite
-openldap-2.4.46 ,,,gnutls,pth,unixodbc,mariadb,postgresql
-keyutils-1.5.10
-libevent-2.1.8
+cyrus-sasl-2.1.27 ,,,krb5,mariadb,openjdk,openldap,postgresql,sqlite
+openldap-2.4.48 ,,,gnutls,pth,unixodbc,mariadb,postgresql
+libevent-2.1.11
 
 encode::locale
 test::needs
@@ -84,8 +91,6 @@ krb5-1.16.1
 
 nettle-3.4
 openssl-1.0.2p
-libtasn1-4.13 ,,,gtk-doc
-p11-kit-0.23.13 ,,,nss,gtk-doc,libxslt
 
 
 
@@ -93,12 +98,6 @@ dosfstools-4.1
 lzo-2.10
 lvm2-2.02.177 ,,,mdadm,xfsprogs #reiserfsprogs
 asciidoc-8.6.9
-libxml2-2.9.8
-libxml2-2.9.8 (python2)
-sgml-common-0.6.3
-docbook-xml-4.5
-docbook-xsl-1.79.2
-libxslt-1.1.32 ,,,libgcrypt
 xmlto-0.0.28 ,,,fop-2.2
 btrfs-progs-4.17.1
 fuse-3.2.5
@@ -266,7 +265,6 @@ whois-5.2.20
 
 ##python modules
 docutils-0.14
-lxml-4.2.4
 pyyaml-3.13
 
 babl-0.1.56
@@ -391,7 +389,6 @@ xfsprogs-4.17.0
 tk-8.6.8
 python-3.7.0
 wpa_supplicant-2.6
-dhcpcd-7.0.1
 
 
 atk-2.29.2
