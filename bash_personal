@@ -7,7 +7,7 @@ export LFS=/mnt/lfs
 #export LFS LC_ALL LFS_TGT PATH
 
 export PYTHONDOCS=/usr/share/doc/python-3/html
-export MAKEFLAGS='-j 8'
+export MAKEFLAGS='-j 4'
 export LFSC='http://www.linuxfromscratch.org/blfs/view/stable-systemd/index.html'
 export LFSM='http://mirror.fileplanet.com/lfs/pub/blfs/9.0'
 export LFSPREV='https://pastebin.com/fQ8UmW2H'
