@@ -2,17 +2,18 @@
 ##if packages or deps are added to the working version they should be added here too
 time-1.9
 tree-1.8.0
-blfs-systemd-units-20180105
-openssh-8.0p1 ,,,linux-pam,X,krb5
-make-ca-1.4 ,,,openjdk,nss,p11-kit #runtime deps?
-libtasn1-4.14
-p11-kit-0.23 ,,,libxslt
+blfs-systemd-units-20191026
+openssh-8.2p1 ,,,linux-pam,X,krb5
+make-ca-1.5 ,,,openjdk,nss,p11-kit #runtime deps?
+libtasn1-4.16.0
+p11-kit-0.23.20 ,,,libxslt
 wget-1.20.3 ,,,gnutls,libidn2,libpsl,pcre,,,,python-2,valgrind,http::daemon,io::socket::ssl
-sudo-1.8.27 ,,,linux-pam,krb5,openldap,mta
+sudo-1.8.31 ,,,linux-pam,krb5,openldap,mta
 lynx-2.8.9 ,,,zip,unzip,mta,sharutils
-libatomic_ops-7.6.10
-screen-4.6.2 ,,,linux-pam
-dhcpcd-8.0.3 ,,,llvm
+#libatomic_ops-7.6.10
+screen-4.8.0 ,,,linux-pam
+dhcpcd-8.1.6 ,,,llvm
+xfsprogs-5.4.0
 
 python-2.7.16 ,,,bluez,sqlite,tk
 pycrypto-2.6.1
