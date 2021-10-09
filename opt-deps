@@ -3,6 +3,7 @@
 time-1.9
 tree-1.8.0
 efivar-37
+popt-1.18
 blfs-systemd-units-20210826
 openssh-8.0p1 ,,,krb5
 make-ca-1.4 ,,,openjdk #runtime deps?
