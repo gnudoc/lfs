@@ -7,14 +7,14 @@ popt-1.18
 efibootmgr-17
 blfs-systemd-units-20210819
 openssh-8.7p1 ,,,linux-pam,X,krb5
-make-ca-1.7 ,,,openjdk,nss,p11-kit #runtime deps?
+make-ca-1.7 ,,,p11-kit #runtime dep
 libtasn1-4.17.0
 p11-kit-0.24.0 ,,,libxslt
 wget-1.21.1 ,,,gnutls,libidn2,libpsl,pcre,,,,python-2,valgrind,http::daemon,io::socket::ssl
 sudo-1.9.7p2 ,,,linux-pam,krb5,openldap,mta
 lynx-2.8.9rel1 ,,,zip,unzip,mta,sharutils
 screen-4.8.0 ,,,linux-pam
-dhcpcd-9.4.0 ,,,llvm
+dhcpcd-9.4.0 ,,,llvm,ntp
 #xfsprogs-5.4.0
 
 python-2.7.16 ,,,bluez,sqlite,tk
