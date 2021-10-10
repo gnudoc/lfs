@@ -2,8 +2,11 @@
 ##if packages or deps are added to the working version they should be added here too
 time-1.9
 tree-1.8.0
-blfs-systemd-units-20191026
-openssh-8.2p1 ,,,linux-pam,X,krb5
+efivar-37
+popt-1.18
+efibootmgr-17
+blfs-systemd-units-20210819
+openssh-8.7p1 ,,,linux-pam,X,krb5
 make-ca-1.5 ,,,openjdk,nss,p11-kit #runtime deps?
 libtasn1-4.16.0
 p11-kit-0.23.20 ,,,libxslt
