@@ -1,0 +1,68 @@
+#set +h
+#umask 022
+#export LFS=/mnt/lfs
+#LC_ALL=POSIX
+#LFS_TGT=$(uname -m)-lfs-linux-gnu
+#PATH=/tools/bin:/bin:/usr/bin
+#export LFS LC_ALL LFS_TGT PATH
+
+export PYTHONDOCS=/usr/share/doc/python-3/html
+export MAKEFLAGS='-j 4'
+export LFSC='http://www.linuxfromscratch.org/blfs/view/stable-systemd/index.html'
+export LFSM='http://mirror.fileplanet.com/lfs/pub/blfs/11.0'
+export LFSPREV='https://pastebin.com/fQ8UmW2H'
+export XORG_PREFIX='/usr'
+export XORG_CONFIG='--prefix=/usr --sysconfdir=/etc --localstatedir=/var --disable-static'
+export VDPAU_DRIVER=va_gl
+export QT5PREFIX=/opt/qt5
+export QT5DIR=/opt/qt5
+export KF5_PREFIX=/opt/kf5
+export GLIB_LOG_LEVEL=4
+export PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig
+
+#alias ct='./configure --prefix=/usr --host=$LFS_TGT'
+#alias ctmm='./configure --prefix=/usr --host=$LFS_TGT && make && make DESTDIR=$LFS install'
+alias cu='./configure --prefix=/usr'
+alias cudmcm='./configure --prefix=/usr --disable-static && make && make check && sudo make install'
+alias cudmm='./configure --prefix=/usr --disable-static && make && sudo make install'
+alias cudmtm='./configure --prefix=/usr --disable-static && make && make test && sudo make install'
+alias cumcm='./configure --prefix=/usr && make && make check && sudo make install'
+alias cumm='./configure --prefix=/usr && make && sudo make install'
+alias cumtm='./configure --prefix=/usr && make && make test && sudo make install'
+alias cx='./configure $XORG_CONFIG'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+alias mb='mkdir -pv build && cd build'
+alias mcm='make && make check && sudo make install'
+alias mh='make && make html'
+alias mhmh='make && make html && sudo make install && sudo make install-html'
+alias mm='make && sudo make install'
+#alias mmd='make && make DESTDIR=$LFS install'
+alias murni='meson --prefix=/usr --buildtype=release .. && ninja && sudo ninja install'
+alias mtm='make && make test && sudo make install'
+alias p2b='python2 setup.py build'
+alias p2i='sudo python2 setup.py install --optimize=1'
+alias p3b='python3 setup.py build'
+alias p3i='sudo python3 setup.py install --optimize=1'
+alias pat='patch -Np1 -i'
+alias pmm='perl Makefile.PL && make && make test && sudo make install'
+alias rf='rm -rf'
+alias taf='tar -xf'
+
+
+as_root()
+{
+  if [ $EUID = 0 ]; then $*
+  elif [ -x /usr/bin/sudo ]; then sudo $*
+  else su -c \\"$*\\"
+  fi
+}
+
+export -f as_root
+
+export HISTSIZE=10000
