@@ -1,0 +1,9 @@
+" Begin .vimrc
+
+set columns=110
+set wrapmargin=8
+set ruler
+set number
+
+" End .vimrc
+

@@ -1,0 +1,20 @@
+startup_message off
+
+#by default s is the useless/unhelpful xoff command, make it the same as S
+bind s split
+
+#baktick	id	lifespan	autorefresh	cmd and args
+backtick	1	120		120		screen_battery.sh
+backtick	2	30		30		date +%T
+
+hardstatus alwayslastline "%{= bR}[%{= bY}%H%{= bR}]%{= bY} %n%{= bR}:%{= bY}%t %{= bw}%W %=%{= bR}[%{= bY}%1`%%%{= bR}][%{= bY}%2`%{= bR}]"
+
+
+chdir /sources/blfs
+screen -t build 0 
+screen -t blfs 1 lynx $HOME/BLFS.html
+chdir $HOME
+screen -t opt 2 vim opt-deps
+screen -t dist 3 vim opt-deps.dist
+chdir /sources/blfs
+screen -t mc 4 mc
