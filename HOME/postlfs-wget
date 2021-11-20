@@ -1,0 +1,2 @@
+wget https://ftp.gnu.org/gnu/time/time-1.9.tar.gz http://mama.indstate.edu/users/ice/tree/src/tree-1.8.0.tgz https://www.linuxfromscratch.org/blfs/downloads/11.0-systemd/blfs-systemd-units-20210819.tar.xz https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-8.7p1.tar.gz https://github.com/djlucas/make-ca/releases/download/v1.7/make-ca-1.7.tar.xz https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.17.0.tar.gz https://github.com/p11-glue/p11-kit/releases/download/0.24.0/p11-kit-0.24.0.tar.xz https://ftp.gnu.org/gnu/wget/wget-1.21.1.tar.gz -c
+
