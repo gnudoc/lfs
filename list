@@ -1,7 +1,6 @@
 base
 base-devel
 calibre
-calibre-plugin-dedrm
 emacs
 firefox
 git
@@ -16,6 +15,7 @@ lynx
 mplayer
 nano
 networkmanager
+openssh
 ntfs-3g
 paru
 plasma
@@ -35,3 +35,5 @@ xf86-video-intel
 xf86-video-vesa
 xorg-server
 xorg-xbacklight
+#bonny sddm
+#kde plasma dark
